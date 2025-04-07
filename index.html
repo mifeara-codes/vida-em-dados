@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json" />
+<meta name="theme-color" content="#fcdde9">
+<link rel="icon" href="icons/icon-512.png" />
+
+  <title>Vida em Dados</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Vida em Dados</h1>
+
+    <form id="profile-form">
+      <label>Nome:</label>
+      <input type="text" id="name" class="form-control" />
+      <label>Idade:</label>
+      <input type="number" id="age" class="form-control" />
+      <label>Objetivo ou Rotina:</label>
+      <input type="text" id="goal" class="form-control" />
+      <button type="submit">Salvar Perfil</button>
+    </form>
+
+    <div class="profile-summary" id="profile-summary"></div>
+
+    <h2>Como foi seu dia?</h2>
+    <form id="daily-form">
+      <label>De 0 à 10, quão bom foi o seu dia hoje?</label>
+      <div class="rating" id="rating-group"></div>
+
+      <label>Bebeu entre um à dois litros de água hoje?</label><br />
+      <input type="radio" name="water" value="Sim" /> Sim
+      <input type="radio" name="water" value="Não" /> Não
+
+      <label>Quais atividades você participou hoje?</label><br />
+      <input type="checkbox" name="activity" value="Treino em academia" /> Treino em academia<br />
+      <input type="checkbox" name="activity" value="Caminhada ao ar livre" /> Caminhada ao ar livre<br />
+      <input type="checkbox" name="activity" value="Trabalho ao ar livre" /> Trabalho ao ar livre<br />
+      <input type="checkbox" name="activity" value="Alongamento leve" /> Alongamento leve<br />
+
+      <button type="submit">Salvar Respostas</button>
+    </form>
+
+    <div class="daily-summary" id="daily-summary"></div>
+
+    <div class="chart-container">
+      <canvas id="heatmapChart"></canvas>
+      <p class="weekly-average" id="weekly-average"></p>
+    </div>
+
+    <div class="history-container">
+      <h3>Histórico da Semana</h3>
+      <ul id="history-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
