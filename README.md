@@ -4,7 +4,7 @@ Vida em Dados é um aplicativo web focado em registrar diariamente o bem-estar f
 
 Este projeto faz parte de uma iniciativa de extensão universitária voltada à promoção de saúde e bem-estar na comunidade, com base no Objetivo de Desenvolvimento Sustentável (ODS) 3 da ONU — Saúde e Bem-estar.
 
----
+--
 
 ## Descrição
 
